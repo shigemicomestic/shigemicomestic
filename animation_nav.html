@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+     <meta charset="utf-8">
+     <meta http- equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width-device-width, initial-scale=1.0">
+     <title>NAV</title>
+     <style>
+         *{
+             box-sizing: border-box;//không xuôsng dòng
+         }
+         body{
+             background-color: aquamarine;
+             color: white;
+         }
+         a{
+             color: white;
+         }
+         .main-nav{
+             list-style: none;
+             padding-left: 0;
+             margin: 20px auto;
+             width: 770px;
+         }
+         .main-nav li{
+             float:left;
+             margin-right: 4px;
+             text-align: center;
+             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+             font-size: 14px;
+             text-transform: uppercase;
+         }
+         .main-nav li:last-child{
+             margin-right:0 ;
+         }
+         .main-nav li a{
+             background-color: brown;
+             text-decoration: none;
+             width: 150px;
+             height: 30px;
+             display: block;
+             line-height: 30px;
+             transition: all .5s;
+             border: 1px solid white;
+         }
+         .main-nav li a:hover{
+             background-color: blue;
+         }
+     </style>
+     </head>
+     <body>
+         <nav>
+             <ul class="main-nav">
+                 <li><a href="#">HOME</a></li>
+                 <li><a href="#">SALE</a></li>
+                 <li><a href="#">NEW</a></li>
+                 <li><a href="#">THƯƠNG HIỆU</a></li>
+
+             </ul>
+         </nav>
+     </body>
+</html>

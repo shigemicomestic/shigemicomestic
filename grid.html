@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+     <meta charset="utf-8">
+     <meta http- equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width-device-width, initial-scale=1.0">
+     <title>Grid</title>
+     <style>
+         .container {
+           display: grid; 
+           /*grid-template-columns: 100px 100px 100px; */
+          /* grid-template-rows: 100px 200px;*/
+           grid-template-columns: 1fr 1fr 2fr;
+           grid-template-rows: repeat(3,100px);
+           /*grid-template: 100px 200px / 100px 100px 100px;/*viêt gop*/
+           grid-gap: 10px;
+       
+        }
+
+         .item{
+         background-color: palevioletred;
+            color: antiquewhite;
+         padding: 1rem;
+         }
+         .item1 {
+         grid-column: 1 / 5;
+         }
+        
+     </style>
+     </head>
+     <body>
+         <div class=" container">
+             <div class="item">item 1</div>
+             <div class="item">item 2</div>
+             <div class="item"> item 3</div>
+             <div class="item">item 4</div>
+         </div>
+
+     </body>
+     </html>
